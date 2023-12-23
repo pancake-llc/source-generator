@@ -6,7 +6,7 @@ namespace source_generator;
 
 public class SyntaxReceiver : ISyntaxReceiver
 {
-    public List<(FieldDeclarationSyntax field, AttributeSyntax syntax)> TargetFields { get; } = [];
+    public List<(FieldDeclarationSyntax field, AttributeSyntax syntax)> TargetFields { get; } = new List<(FieldDeclarationSyntax field, AttributeSyntax syntax)>();
 
     public void OnVisitSyntaxNode(SyntaxNode syntaxNode)
     {

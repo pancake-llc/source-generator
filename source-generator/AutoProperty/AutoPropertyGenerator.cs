@@ -22,6 +22,7 @@ public class AutoPropertyGenerator : ISourceGenerator
         const string AttributeText = @"using System;
 namespace Pancake.SourceGenerator
 {
+#pragma warning disable CS0436
     [AttributeUsage(AttributeTargets.Field, Inherited = false, AllowMultiple = false)]
     sealed class AutoPropertyAttribute : Attribute
     {
